@@ -1,6 +1,9 @@
-$light-grey: #f2f2f2;
+@import '../styles/custom.scss';
+@import '~bootstrap/scss/functions';
 
 .app {
-  background-color: $light-grey;
+  background-color: color('paschal');
+  color: color('egg-white');
   padding: 5px;
+  text-shadow: 1px 1px color('nested');
 }
