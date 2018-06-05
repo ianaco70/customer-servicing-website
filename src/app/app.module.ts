@@ -1,6 +1,7 @@
 // vendor
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // feature modules
 import { AppRoutingModule } from './app-routing.module';
@@ -28,7 +29,8 @@ import { routedComponents } from './app-routing.module';
   exports: [],
   imports: [
     // vendor
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
     // feature
   ],
   providers: [
