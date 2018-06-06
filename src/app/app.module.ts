@@ -7,7 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 // feature modules
 import { AuthModule } from './auth/auth.module';
-import { SharedModule } from './shared/shared.module';
 
 // containers
 import { AppComponent } from './app.component';
@@ -29,7 +28,7 @@ export const ROUTES: Routes = [{ path: '**', redirectTo: '' }];
   bootstrap: [AppComponent],
   declarations: [
     // containers
-    AppComponent,
+    AppComponent
     // components
   ],
   exports: [],
@@ -40,11 +39,10 @@ export const ROUTES: Routes = [{ path: '**', redirectTo: '' }];
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES),
     // feature
-    AuthModule,
-    SharedModule,
+    AuthModule
   ],
   providers: [
     // services
-  ],
+  ]
 })
 export class AppModule {}

@@ -2,7 +2,7 @@
 @import '~bootstrap/scss/functions';
 
 .app {
-  background-color: color('paschal');
+  background-color: var(--paschal);
   color: color('egg-white');
   padding: 5px;
   text-shadow: 1px 1px color('nested');
